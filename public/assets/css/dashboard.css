@@ -1,0 +1,41 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0; font-family: system-ui, sans-serif; background: #f4f4f2; color: #1f2320;
+}
+.dash-header { background: #1f2320; color: #fff; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; }
+.dash-header h1 { font-size: 1.1rem; margin: 0; }
+.dash-header button { background: none; border: 1px solid rgba(255,255,255,.3); color: #fff; padding: 7px 14px; border-radius: 7px; cursor: pointer; font-size: .85rem; }
+.dash-wrap { max-width: 960px; margin: 0 auto; padding: 32px 20px 60px; }
+
+.dash-login { max-width: 380px; margin: 80px auto; background: #fff; border-radius: 12px; padding: 28px; box-shadow: 0 10px 30px rgba(0,0,0,.08); }
+.dash-login h1 { font-size: 1.3rem; margin: 0 0 6px; }
+.dash-login p.sub { color: #777; font-size: .88rem; margin: 0 0 20px; }
+.dash-login label { display: block; font-size: .82rem; font-weight: 600; margin: 12px 0 5px; }
+.dash-login input { width: 100%; padding: 9px 11px; border: 1px solid #ddd; border-radius: 8px; font-size: .92rem; }
+.dash-login button.submit { width: 100%; margin-top: 18px; padding: 11px; border: 0; border-radius: 8px; background: #1a5f4a; color: #fff; font-weight: 600; cursor: pointer; font-size: .95rem; }
+.dash-login .toggle { text-align: center; margin-top: 14px; font-size: .82rem; }
+.dash-login .toggle a { color: #1a5f4a; cursor: pointer; text-decoration: underline; }
+.dash-error { background: #fdf2ef; color: #b8402e; border: 1px solid #f0c9c1; padding: 8px 12px; border-radius: 7px; font-size: .82rem; margin-top: 12px; }
+
+.dash-toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.dash-toolbar h2 { margin: 0; font-size: 1.15rem; }
+.dash-btn { border: 0; background: #1a5f4a; color: #fff; padding: 10px 18px; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: .88rem; }
+.dash-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+.dash-card { background: #fff; border-radius: 12px; padding: 18px; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
+.dash-card h3 { margin: 0 0 4px; font-size: 1.02rem; }
+.dash-card .slug { color: #888; font-size: .8rem; margin-bottom: 14px; }
+.dash-card .row { display: flex; gap: 8px; flex-wrap: wrap; }
+.dash-card a.open, .dash-card button {
+  border: 1px solid #ddd; background: #fafaf9; border-radius: 7px; padding: 7px 12px; font-size: .8rem;
+  cursor: pointer; text-decoration: none; color: #1f2320; font-weight: 600;
+}
+.dash-card a.open { background: #1a5f4a; color: #fff; border-color: #1a5f4a; }
+.dash-card button.del { color: #b8402e; }
+.dash-empty { text-align: center; color: #888; padding: 60px 0; }
+
+.dash-modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,.45); display: flex; align-items: center; justify-content: center; z-index: 50; padding: 20px; }
+.dash-modal { background: #fff; border-radius: 12px; padding: 22px; width: 100%; max-width: 380px; }
+.dash-modal h3 { margin: 0 0 14px; }
+.dash-modal label { display: block; font-size: .82rem; font-weight: 600; margin: 10px 0 5px; }
+.dash-modal input { width: 100%; padding: 9px 11px; border: 1px solid #ddd; border-radius: 8px; font-size: .9rem; }
+.dash-modal .actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 18px; }
