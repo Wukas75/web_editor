@@ -158,7 +158,7 @@ createServer(async (req, res) => {
   }
 }).listen(PORT, () => {
   console.log('\n  Site Builder (dev-node)  →  http://localhost:' + PORT)
-  console.log('  Dashboard:  http://localhost:' + PORT + '/admin')
-  console.log('  Ukážkový web:  http://localhost:' + PORT + '/s.html?site=demo')
-  console.log('  Setup token:', ENV.SETUP_TOKEN, '\n')
+  console.log('  Dashboard:      http://localhost:' + PORT + '/')
+  console.log('  Ukážkový web:   http://localhost:' + PORT + '/s.html?site=demo')
+  console.log('  Setup token:   ', ENV.SETUP_TOKEN, '\n')
 })
